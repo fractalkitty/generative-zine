@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Generative Zine</title>
+
+  <style>
+    /* Full screen container */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #fff;
+      /* Ensure background is not affecting visibility */
+    }
+
+    h1 {
+      text-align: center;
+      margin: auto;
+    }
+
+    p {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* Container to manage scaling */
+    .sketch-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #f0f0f0;
+      /* Light gray background for visibility */
+    }
+
+    /* Scale the canvas using CSS */
+    .scaled-canvas {
+      position: absolute;
+      transform: scale(0.5);
+      /* Adjust scale as needed */
+      transform-origin: center center;
+      /* Anchor scaling to the center */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Generative Zine</h1>
+  <p>Each zine is generative and unique. This zine folds like others with this template by cutting the horizontal line
+    along the middle two panels and folding. Made for XOXO2024.</p>
+  <p>Press "s" to save as a png. This sketch may fail to load (there are close to a million elements in each) - refresh
+    if needed. </p>
+  <p>This sketch take a while to run and may need to get reloaded (there are close to a million elements in each). </p>
+  <div class="sketch-container" id="sketch-container"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

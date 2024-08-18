@@ -1,0 +1,24 @@
+body {
+  background-color: grey;
+  display: flex;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  align-items: center;
+  justify-content: center;
+}
+
+.sketch-container {
+  position: relative;
+
+  width: 100%; /* or specify a fixed width like 800px */
+  height: 100%; /* or specify a fixed height */
+  overflow: hidden; /* Hide any overflow caused by scaling */
+  display: flex;
+  margin: auto;
+}
+
+canvas {
+  transform: scale(0.5); /* Scale the sketch down to 50% */
+  transform-origin: 0 0; /* Scale from the top-left corner */
+}
