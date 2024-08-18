@@ -1,4 +1,6 @@
 //poetry made to print for XOXO
+//This code is the result of late night just make something cool and - "I'll refactor this later" mentallity. It's awful - sorry.
+let logo;
 let logo;
 let qr;
 let canvas;
